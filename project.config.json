@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "fileId": "1RgMhjtkXlbbf9uzSzy_xPRKwxcVZIZqVytgM_JoU4E4",
+      "type": "doc",
+      "name": "library"
+    },
+    {
+      "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
+      "type": "sheet",
+      "name": "bookstores"
+    },
+    {
+      "fileId": "1lwWi4LZdp2k3JVlBYQVSPAquQKF75ZVP61uEYF7SUoQ",
+      "type": "doc",
+      "name": "blog"
+    }, 
+    {
+      "fileId": "1XQtRea94A1mJs5hkkc3-eO8yVFSRmtOwnxBZnFoNAoA",
+      "type": "sheet",
+      "name": "projects"
+    },
+    {
+      "fileId": "1MXWqhwqHSrd1YJvL6BukHM9dF0mbhylvEzI042QvXhc",
+      "type": "sheet",
+      "name": "photos"
+    }
+  ],
+  "to_bake": [
+    {
+      "template": "bake-book",
+      "data": "library",
+      "array": "books",
+      "slug": "slug",
+      "path": "books"
+    },
+    {
+      "template": "bake-blog",
+      "data": "blog",
+      "array": "blogs",
+      "slug": "slug",
+      "path": "blogs"
+    }
+  ]
+}

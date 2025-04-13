@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ relative_path }}index.html">DT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="{{ relative_path }}about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ relative_path }}gallery.html" class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id = "navbarDropdownBlogLink" role = "button" data-bs-toggle = "dropdown" aria-expanded = "false">Blogs</a>
+          <ul class="dropdown-menu" aria-labelledby = "navbarDropdownBlogLink">
+            {% for blog in blog.blogs %}
+            <li><a href="{{ relative_path }}blogs/{{ blog.slug }}.html" class="dropdown-item">{{ blog.headline }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
